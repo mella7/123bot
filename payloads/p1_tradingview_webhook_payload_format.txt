@@ -1,0 +1,27 @@
+{
+    "passphrase": "abcdefgh",
+    "time": "{{timenow}}",
+    "exchange": "{{exchange}}",
+    "ticker": "{{ticker}}",
+    "bar": {
+        "time": "{{time}}",
+        "open": {{open}},
+        "high": {{high}},
+        "low": {{low}},
+        "close": {{close}},
+        "volume": {{volume}}
+    },
+    "strategy": {
+        "position_size": {{strategy.position_size}},
+        "order_action": "{{strategy.order.action}}",
+        "order_contracts": {{strategy.order.contracts}},
+        "order_price": {{strategy.order.price}},
+        "order_id": "{{strategy.order.id}}",
+        "market_position": "{{strategy.market_position}}",
+        "market_position_size": {{strategy.market_position_size}},
+        "prev_market_position": "{{strategy.prev_market_position}}",
+        "prev_market_position_size": {{strategy.prev_market_position_size}}
+    }
+}
+***************************************************************************************
+Stelona ML (5, 2000, close, 10, 6000, 3, 1, -0.1, 36, RSI, 30, 1, WT, 12, 13, CCI, 26, 1, ADX, 20, 2, RSI, 9, 1, 400, 200, 8, 8, 25, 6, 0, 14, EMA, 1.5, 1, 1, open, ohlc4, Stop Loss, Take Profit 1, Take Profit 2, EMA Cross, Stoch RSI Crossover): order {{strategy.order.action}} @ {{strategy.order.contracts}} filled on {{ticker}}. New strategy position is {{strategy.position_size}}
